@@ -1,0 +1,101 @@
+{
+"type": "FeatureCollection",
+"metadata": {
+"generated": 1793495688000,
+"url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/significant_week.geojson",
+"title": "USGS Significant Earthquakes, Past Week",
+"status": 200,
+"api": "2.8.2",
+"count": 2
+},
+"features": [
+{
+"type": "Feature",
+"properties": {
+"mag": 6.4,
+"place": "southeast of Easter Island",
+"time": 1793260190928,
+"updated": 1793356727040,
+"tz": null,
+"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ttxz",
+"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us7000ttxz.geojson",
+"felt": null,
+"cdi": null,
+"mmi": 0,
+"alert": "green",
+"status": "reviewed",
+"tsunami": 0,
+"sig": 630,
+"net": "us",
+"code": "7000ttxz",
+"ids": ",us7000ttxz,",
+"sources": ",us,",
+"types": ",losspager,moment-tensor,origin,phase-data,shakemap,",
+"nst": 83,
+"dmin": 13.321,
+"rms": 1.32,
+"gap": 39,
+"magType": "mww",
+"type": "earthquake",
+"title": "M 6.4 - southeast of Easter Island"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+-98.0489,
+-36.4058,
+10
+]
+},
+"id": "us7000ttxz"
+},
+{
+"type": "Feature",
+"properties": {
+"mag": 6.5,
+"place": "Bonin Islands, Japan region",
+"time": 1792894163818,
+"updated": 1793239975538,
+"tz": null,
+"url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u4r9",
+"detail": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/detail/us6000u4r9.geojson",
+"felt": 1,
+"cdi": 1,
+"mmi": 0,
+"alert": "green",
+"status": "reviewed",
+"tsunami": 1,
+"sig": 650,
+"net": "us",
+"code": "6000u4r9",
+"ids": ",us6000u4r9,attnfxzn,",
+"sources": ",us,at,",
+"types": ",dyfi,impact-link,losspager,moment-tensor,origin,phase-data,shakemap,",
+"nst": 124,
+"dmin": 7.706,
+"rms": 0.8,
+"gap": 24,
+"magType": "mww",
+"type": "earthquake",
+"title": "M 6.5 - Bonin Islands, Japan region"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [
+139.6184,
+27.7953,
+492.376
+]
+},
+"id": "us6000u4r9"
+}
+],
+"bbox": [
+-98.0489,
+-36.4058,
+10,
+139.6184,
+27.7953,
+492.376
+]
+}

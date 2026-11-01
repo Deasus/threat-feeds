@@ -1,0 +1,228 @@
+{
+"document": {
+"aggregate_severity": {
+"namespace": "https://www.first.org/cvss/specification-document",
+"text": "HIGH"
+},
+"category": "csaf_security_advisory",
+"csaf_version": "2.0",
+"distribution": {
+"text": "Disclosure is not limited",
+"tlp": {
+"label": "WHITE",
+"url": "https://www.cisa.gov/news-events/news/traffic-light-protocol-tlp-definitions-and-usage"
+}
+},
+"lang": "en-US",
+"notes": [
+{
+"category": "summary",
+"text": "Hitachi Energy is aware of OS command injection and Dirty Frag vulnerabilities that affect CoreTec product versions listed in this document. Successful exploitation of these vulnerabilities could result in impact on confidentiality, integrity and availability of the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation.",
+"title": "Summary"
+},
+{
+"category": "other",
+"text": "Energy",
+"title": "Critical infrastructure sectors"
+},
+{
+"category": "other",
+"text": "Worldwide",
+"title": "Countries/areas deployed"
+},
+{
+"category": "other",
+"text": "Switzerland",
+"title": "Company headquarters location"
+}
+],
+"publisher": {
+"category": "other",
+"contact_details": "central@cisa.dhs.gov",
+"name": "CISA",
+"namespace": "https://www.cisa.gov/"
+},
+"references": [
+{
+"category": "self",
+"summary": "ICS Advisory icsa-26-302-03 JSON",
+"url": "https://raw.githubusercontent.com/cisagov/CSAF/develop/csaf_files/OT/white/2026/icsa-26-302-03.json"
+},
+{
+"category": "self",
+"summary": "[1] Hitachi Energy Notification for Industrial Control Systems Cybersecurity Best Practices",
+"url": "https://publisher.hitachienergy.com/preview?DocumentID=8DBD000235&LanguageCode=en&DocumentPartId=&Action=Launch"
+},
+{
+"category": "self",
+"summary": "Command Injection and Dirty Frag Vulnerabilities in Hitachi Energy CoreTec Product",
+"url": "https://publisher.hitachienergy.com/preview?DocumentID=8DBD000258&LanguageCode=en&DocumentPartId=&Action=launch"
+},
+{
+"category": "self",
+"summary": "ICS Advisory icsa-26-302-03 - Web Version",
+"url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-302-03"
+},
+{
+"category": "external",
+"summary": "Recommended Practices",
+"url": "https://www.cisa.gov/news-events/ics-alerts/ics-alert-10-301-01"
+},
+{
+"category": "external",
+"summary": "Recommended Practices",
+"url": "https://www.cisa.gov/resources-tools/resources/ics-recommended-practices"
+},
+{
+"category": "external",
+"summary": "Recommended Practices",
+"url": "https://www.cisa.gov/topics/industrial-control-systems"
+},
+{
+"category": "external",
+"summary": "Recommended Practices",
+"url": "https://www.cisa.gov/sites/default/files/recommended_practices/NCCIC_ICS-CERT_Defense_in_Depth_2016_S508C.pdf"
+},
+{
+"category": "external",
+"summary": "Recommended Practices",
+"url": "https://www.cisa.gov/sites/default/files/publications/Cybersecurity_Best_Practices_for_Industrial_Control_Systems.pdf"
+},
+{
+"category": "external",
+"summary": "Recommended Practices",
+"url": "https://www.cisa.gov/news-events/news/targeted-cyber-intrusion-detection-and-mitigation-strategies-update-b"
+}
+],
+"title": "Hitachi Energy CoreTec Product",
+"tracking": {
+"current_release_date": "2026-10-29T06:00:00.000000Z",
+"generator": {
+"date": "2026-10-27T15:13:42.472453Z",
+"engine": {
+"name": "CISA CSAF Generator",
+"version": "1.5.0"
+}
+},
+"id": "ICSA-26-302-03",
+"initial_release_date": "2026-10-27T00:00:00.000000Z",
+"revision_history": [
+{
+"date": "2026-10-27T00:00:00.000000Z",
+"legacy_version": "Initial",
+"number": "1",
+"summary": "Initial public release"
+}
+],
+"status": "final",
+"version": "2"
+}
+},
+"product_tree": {
+"branches": [
+{
+"branches": [
+{
+"branches": [
+{
+"category": "product_version_range",
+"name": "vers:CoreTec5/<=3.4.0",
+"product": {
+"name": "CoreTec5 versions 3.4.0 and prior",
+"product_id": "CSAFPID-0001"
+}
+},
+{
+"category": "product_version",
+"name": "5.0.0",
+"product": {
+"name": "CoreTec5 version 5.0.0",
+"product_id": "CSAFPID-0002"
+}
+}
+],
+"category": "product_name",
+"name": "CoreTec5"
+},
+{
+"branches": [
+{
+"category": "product_version_range",
+"name": "vers:CoreTec4/<=3.4.0",
+"product": {
+"name": "CoreTec4 versions 3.4.0 and prior",
+"product_id": "CSAFPID-0003"
+}
+}
+],
+"category": "product_name",
+"name": "CoreTec4"
+}
+],
+"category": "vendor",
+"name": "Hitachi Energy"
+}
+]
+},
+"vulnerabilities": [
+{
+"cve": "CVE-2026-13162",
+"cwe": {
+"id": "CWE-78",
+"name": "Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection')"
+},
+"scores": [
+{
+"cvss_v3": {
+"attackComplexity": "HIGH",
+"attackVector": "NETWORK",
+"availabilityImpact": "HIGH",
+"baseScore": 7.5,
+"baseSeverity": "HIGH",
+"confidentialityImpact": "HIGH",
+"integrityImpact": "HIGH",
+"privilegesRequired": "LOW",
+"scope": "UNCHANGED",
+"userInteraction": "NONE",
+"vectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+"version": "3.1"
+},
+"products": [
+"CSAFPID-0001",
+"CSAFPID-0003"
+]
+}
+],
+"title": "CVE-2026-13162"
+},
+{
+"cve": "CVE-2026-43284",
+"cwe": {
+"id": "CWE-123",
+"name": "Write-what-where Condition"
+},
+"scores": [
+{
+"cvss_v3": {
+"attackComplexity": "LOW",
+"attackVector": "LOCAL",
+"availabilityImpact": "HIGH",
+"baseScore": 8.8,
+"baseSeverity": "HIGH",
+"confidentialityImpact": "HIGH",
+"integrityImpact": "HIGH",
+"privilegesRequired": "LOW",
+"scope": "CHANGED",
+"userInteraction": "NONE",
+"vectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+"version": "3.1"
+},
+"products": [
+"CSAFPID-0001"
+]
+}
+],
+"title": "CVE-2026-43284"
+}
+]
+}

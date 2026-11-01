@@ -1,0 +1,41 @@
+name: conductor
+
+# One pass per tick: run the feeds that are due, publish them, exit (see conductor.py).
+# This cron line is the only schedule in the repo.
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+    inputs:
+      only:
+        description: 'Comma-separated feeds to run, due or not (debugging)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: conductor
+  cancel-in-progress: false
+
+jobs:
+  conduct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: tests (decoders on fixtures; no network)
+        run: python -m unittest discover -s tests -q
+
+      - name: run feeds
+        env:
+          CONDUCTOR_ONLY: ${{ inputs.only }}
+        run: python conductor.py

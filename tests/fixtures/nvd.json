@@ -1,0 +1,799 @@
+{
+"resultsPerPage": 4,
+"startIndex": 0,
+"totalResults": 4,
+"format": "NVD_CVE",
+"version": "2.0",
+"vulnerabilities": [
+{
+"cve": {
+"id": "CVE-2026-69399",
+"sourceIdentifier": "secure@microsoft.com",
+"published": "2026-09-17T23:18:18.793",
+"lastModified": "2026-10-31T17:17:30.793",
+"vulnStatus": "Modified",
+"cveTags": [
+{
+"sourceIdentifier": "secure@microsoft.com",
+"tags": [
+"exclusively-hosted-service"
+]
+}
+],
+"descriptions": [
+{
+"lang": "en",
+"value": "Unintended proxy or intermediary in Azure Arc allows an authorized attacker to elevate privileges over a network."
+}
+],
+"affected": [
+{
+"source": "secure@microsoft.com",
+"affectedData": [
+{
+"vendor": "Microsoft",
+"product": "Azure ARC",
+"versions": [
+{
+"version": "-",
+"status": "affected"
+}
+]
+}
+]
+}
+],
+"metrics": {
+"cvssMetricV31": [
+{
+"source": "secure@microsoft.com",
+"type": "Primary",
+"cvssData": {
+"version": "3.1",
+"vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+"baseScore": 9.9,
+"baseSeverity": "CRITICAL",
+"attackVector": "NETWORK",
+"attackComplexity": "LOW",
+"privilegesRequired": "LOW",
+"userInteraction": "NONE",
+"scope": "CHANGED",
+"confidentialityImpact": "HIGH",
+"integrityImpact": "HIGH",
+"availabilityImpact": "HIGH"
+},
+"exploitabilityScore": 3.1,
+"impactScore": 6.0
+},
+{
+"source": "nvd@nist.gov",
+"type": "Secondary",
+"cvssData": {
+"version": "3.1",
+"vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+"baseScore": 9.8,
+"baseSeverity": "CRITICAL",
+"attackVector": "NETWORK",
+"attackComplexity": "LOW",
+"privilegesRequired": "NONE",
+"userInteraction": "NONE",
+"scope": "UNCHANGED",
+"confidentialityImpact": "HIGH",
+"integrityImpact": "HIGH",
+"availabilityImpact": "HIGH"
+},
+"exploitabilityScore": 3.9,
+"impactScore": 5.9
+}
+],
+"ssvcV203": [
+{
+"source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+"ssvcData": {
+"timestamp": "2026-09-18T14:12:08.773079Z",
+"id": "CVE-2026-69399",
+"options": [
+{
+"exploitation": "none"
+},
+{
+"automatable": "yes"
+},
+{
+"technicalImpact": "total"
+}
+],
+"role": "CISA Coordinator",
+"version": "2.0.3"
+}
+}
+]
+},
+"weaknesses": [
+{
+"source": "secure@microsoft.com",
+"type": "Secondary",
+"description": [
+{
+"lang": "en",
+"value": "CWE-441"
+}
+]
+}
+],
+"configurations": [
+{
+"nodes": [
+{
+"operator": "OR",
+"negate": false,
+"cpeMatch": [
+{
+"vulnerable": true,
+"criteria": "cpe:2.3:a:microsoft:azure_arc:-:*:*:*:*:*:*:*",
+"matchCriteriaId": "FBE84F29-0F6A-46F5-9F06-8D992C0417BA"
+}
+]
+}
+]
+}
+]
+}
+},
+{
+"cve": {
+"id": "CVE-2025-32911",
+"sourceIdentifier": "secalert@redhat.com",
+"published": "2025-04-15T16:16:06.567",
+"lastModified": "2026-11-01T01:17:11.417",
+"vulnStatus": "Deferred",
+"cveTags": [],
+"descriptions": [
+{
+"lang": "en",
+"value": "A use-after-free type vulnerability was found in libsoup, in the soup_message_headers_get_content_disposition() function. This flaw allows a malicious HTTP client to cause memory corruption in the libsoup server."
+}
+],
+"affected": [
+{
+"source": "secalert@redhat.com",
+"affectedData": [
+{
+"defaultStatus": "unaffected",
+"collectionURL": "https://gitlab.gnome.org/GNOME/libsoup/",
+"packageName": "libsoup",
+"versions": [
+{
+"version": "0",
+"lessThan": "3.6.3",
+"versionType": "semver",
+"status": "affected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 7 Extended Lifecycle Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/o:redhat:rhel_els:7"
+],
+"versions": [
+{
+"version": "0:2.62.2-9.el7_9",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:enterprise_linux:8::appstream",
+"cpe:/o:redhat:enterprise_linux:8::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-8.el8_10",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "mingw-freetype",
+"cpes": [
+"cpe:/a:redhat:enterprise_linux:8::appstream",
+"cpe:/a:redhat:enterprise_linux:8::crb"
+],
+"versions": [
+{
+"version": "0:2.8-3.el8_10.1",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "spice-client-win",
+"cpes": [
+"cpe:/a:redhat:enterprise_linux:8::appstream",
+"cpe:/a:redhat:enterprise_linux:8::crb"
+],
+"versions": [
+{
+"version": "0:8.10-1",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:enterprise_linux:8::appstream",
+"cpe:/o:redhat:enterprise_linux:8::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-8.el8_10",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.2 Advanced Update Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.2::appstream",
+"cpe:/o:redhat:rhel_aus:8.2::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-1.el8_2.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.4 Advanced Mission Critical Update Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.4::appstream",
+"cpe:/a:redhat:rhel_e4s:8.4::appstream",
+"cpe:/a:redhat:rhel_tus:8.4::appstream",
+"cpe:/o:redhat:rhel_aus:8.4::baseos",
+"cpe:/o:redhat:rhel_e4s:8.4::baseos",
+"cpe:/o:redhat:rhel_tus:8.4::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-2.el8_4.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.4 Telecommunications Update Service",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.4::appstream",
+"cpe:/a:redhat:rhel_e4s:8.4::appstream",
+"cpe:/a:redhat:rhel_tus:8.4::appstream",
+"cpe:/o:redhat:rhel_aus:8.4::baseos",
+"cpe:/o:redhat:rhel_e4s:8.4::baseos",
+"cpe:/o:redhat:rhel_tus:8.4::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-2.el8_4.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.4 Update Services for SAP Solutions",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.4::appstream",
+"cpe:/a:redhat:rhel_e4s:8.4::appstream",
+"cpe:/a:redhat:rhel_tus:8.4::appstream",
+"cpe:/o:redhat:rhel_aus:8.4::baseos",
+"cpe:/o:redhat:rhel_e4s:8.4::baseos",
+"cpe:/o:redhat:rhel_tus:8.4::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-2.el8_4.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.6 Advanced Mission Critical Update Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.6::appstream",
+"cpe:/a:redhat:rhel_e4s:8.6::appstream",
+"cpe:/a:redhat:rhel_tus:8.6::appstream",
+"cpe:/o:redhat:rhel_aus:8.6::baseos",
+"cpe:/o:redhat:rhel_e4s:8.6::baseos",
+"cpe:/o:redhat:rhel_tus:8.6::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-2.el8_6.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.6 Telecommunications Update Service",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.6::appstream",
+"cpe:/a:redhat:rhel_e4s:8.6::appstream",
+"cpe:/a:redhat:rhel_tus:8.6::appstream",
+"cpe:/o:redhat:rhel_aus:8.6::baseos",
+"cpe:/o:redhat:rhel_e4s:8.6::baseos",
+"cpe:/o:redhat:rhel_tus:8.6::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-2.el8_6.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.6 Update Services for SAP Solutions",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_aus:8.6::appstream",
+"cpe:/a:redhat:rhel_e4s:8.6::appstream",
+"cpe:/a:redhat:rhel_tus:8.6::appstream",
+"cpe:/o:redhat:rhel_aus:8.6::baseos",
+"cpe:/o:redhat:rhel_e4s:8.6::baseos",
+"cpe:/o:redhat:rhel_tus:8.6::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-2.el8_6.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 8.8 Extended Update Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_eus:8.8::appstream",
+"cpe:/o:redhat:rhel_eus:8.8::baseos"
+],
+"versions": [
+{
+"version": "0:2.62.3-3.el8_8.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 9",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:enterprise_linux:9::appstream"
+],
+"versions": [
+{
+"version": "0:2.72.0-10.el9_6.1",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 9.0 Update Services for SAP Solutions",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_e4s:9.0::appstream"
+],
+"versions": [
+{
+"version": "0:2.72.0-8.el9_0.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 9.2 Extended Update Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_eus:9.2::appstream"
+],
+"versions": [
+{
+"version": "0:2.72.0-8.el9_2.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 9.4 Extended Update Support",
+"defaultStatus": "affected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/a:redhat:rhel_eus:9.4::appstream"
+],
+"versions": [
+{
+"version": "0:2.72.0-8.el9_4.4",
+"lessThan": "*",
+"versionType": "rpm",
+"status": "unaffected"
+}
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 10",
+"defaultStatus": "unaffected",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup3",
+"cpes": [
+"cpe:/o:redhat:enterprise_linux:10"
+]
+},
+{
+"vendor": "Red Hat",
+"product": "Red Hat Enterprise Linux 6",
+"defaultStatus": "unknown",
+"collectionURL": "https://access.redhat.com/downloads/content/package-browser/",
+"packageName": "libsoup",
+"cpes": [
+"cpe:/o:redhat:enterprise_linux:6"
+]
+}
+]
+}
+],
+"metrics": {
+"cvssMetricV31": [
+{
+"source": "secalert@redhat.com",
+"type": "Secondary",
+"cvssData": {
+"version": "3.1",
+"vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+"baseScore": 9.0,
+"baseSeverity": "CRITICAL",
+"attackVector": "NETWORK",
+"attackComplexity": "HIGH",
+"privilegesRequired": "NONE",
+"userInteraction": "NONE",
+"scope": "CHANGED",
+"confidentialityImpact": "HIGH",
+"integrityImpact": "HIGH",
+"availabilityImpact": "HIGH"
+},
+"exploitabilityScore": 2.2,
+"impactScore": 6.0
+}
+],
+"ssvcV203": [
+{
+"source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+"ssvcData": {
+"timestamp": "2025-04-15T15:57:21.589990Z",
+"id": "CVE-2025-32911",
+"options": [
+{
+"exploitation": "none"
+},
+{
+"automatable": "no"
+},
+{
+"technicalImpact": "total"
+}
+],
+"role": "CISA Coordinator",
+"version": "2.0.3"
+}
+}
+]
+},
+"weaknesses": [
+{
+"source": "secalert@redhat.com",
+"type": "Secondary",
+"description": [
+{
+"lang": "en",
+"value": "CWE-590"
+}
+]
+}
+]
+}
+},
+{
+"cve": {
+"id": "CVE-2026-102212",
+"sourceIdentifier": "e8a6bb0b-e373-42b1-a5de-93e314325576",
+"published": "2026-10-31T16:16:52.553",
+"lastModified": "2026-10-31T16:16:52.553",
+"vulnStatus": "Received",
+"cveTags": [],
+"descriptions": [
+{
+"lang": "en",
+"value": "Heap-based buffer overflow in Opengear IM72XX, CM71XX, and ACM70XX firmware versions 4.8.0 through 5.5.2 on console server appliances allows an unauthenticated remote attacker to crash the index.cgi process via a crafted multipart/form-data POST request containing an overlong Content-Disposition name field."
+}
+],
+"affected": [
+{
+"source": "e8a6bb0b-e373-42b1-a5de-93e314325576",
+"affectedData": [
+{
+"vendor": "Opengear",
+"product": "IM7200",
+"defaultStatus": "unaffected",
+"platforms": [
+"Linux"
+],
+"versions": [
+{
+"version": "4.8",
+"lessThanOrEqual": "5.5.2",
+"versionType": "firmware",
+"status": "affected"
+}
+]
+},
+{
+"vendor": "Opengear",
+"product": "CM7100",
+"defaultStatus": "unaffected",
+"platforms": [
+"Linux"
+],
+"versions": [
+{
+"version": "4.8",
+"lessThanOrEqual": "5.5.2",
+"versionType": "firmware",
+"status": "affected"
+}
+]
+},
+{
+"vendor": "Opengear",
+"product": "ACM7000",
+"defaultStatus": "unaffected",
+"platforms": [
+"Linux"
+],
+"versions": [
+{
+"version": "4.8",
+"lessThanOrEqual": "5.5.2",
+"versionType": "firmware",
+"status": "affected"
+}
+]
+}
+]
+}
+],
+"metrics": {
+"cvssMetricV40": [
+{
+"source": "e8a6bb0b-e373-42b1-a5de-93e314325576",
+"type": "Secondary",
+"cvssData": {
+"version": "4.0",
+"vectorString": "CVSS:4.0/AV:N/AC:H/AT:P/PR:N/UI:N/VC:H/VI:H/VA:H/SC:H/SI:H/SA:H/E:U/CR:X/IR:X/AR:X/MAV:X/MAC:X/MAT:X/MPR:X/MUI:X/MVC:X/MVI:X/MVA:X/MSC:X/MSI:X/MSA:X/S:P/AU:Y/R:X/V:X/RE:L/U:Red",
+"baseScore": 8.4,
+"baseSeverity": "HIGH",
+"attackVector": "NETWORK",
+"attackComplexity": "HIGH",
+"attackRequirements": "PRESENT",
+"privilegesRequired": "NONE",
+"userInteraction": "NONE",
+"vulnConfidentialityImpact": "HIGH",
+"vulnIntegrityImpact": "HIGH",
+"vulnAvailabilityImpact": "HIGH",
+"subConfidentialityImpact": "HIGH",
+"subIntegrityImpact": "HIGH",
+"subAvailabilityImpact": "HIGH",
+"exploitMaturity": "UNREPORTED",
+"confidentialityRequirement": "NOT_DEFINED",
+"integrityRequirement": "NOT_DEFINED",
+"availabilityRequirement": "NOT_DEFINED",
+"modifiedAttackVector": "NOT_DEFINED",
+"modifiedAttackComplexity": "NOT_DEFINED",
+"modifiedAttackRequirements": "NOT_DEFINED",
+"modifiedPrivilegesRequired": "NOT_DEFINED",
+"modifiedUserInteraction": "NOT_DEFINED",
+"modifiedVulnConfidentialityImpact": "NOT_DEFINED",
+"modifiedVulnIntegrityImpact": "NOT_DEFINED",
+"modifiedVulnAvailabilityImpact": "NOT_DEFINED",
+"modifiedSubConfidentialityImpact": "NOT_DEFINED",
+"modifiedSubIntegrityImpact": "NOT_DEFINED",
+"modifiedSubAvailabilityImpact": "NOT_DEFINED",
+"Safety": "PRESENT",
+"Automatable": "YES",
+"Recovery": "NOT_DEFINED",
+"valueDensity": "NOT_DEFINED",
+"vulnerabilityResponseEffort": "LOW",
+"providerUrgency": "RED"
+}
+}
+]
+},
+"weaknesses": [
+{
+"source": "e8a6bb0b-e373-42b1-a5de-93e314325576",
+"type": "Secondary",
+"description": [
+{
+"lang": "en",
+"value": "CWE-122"
+}
+]
+}
+]
+}
+},
+{
+"cve": {
+"id": "CVE-2026-78188",
+"sourceIdentifier": "9b29abf9-4ab0-4765-b253-1875cd9b441e",
+"published": "2026-10-31T15:16:53.860",
+"lastModified": "2026-10-31T15:16:53.860",
+"vulnStatus": "Received",
+"cveTags": [],
+"descriptions": [
+{
+"lang": "en",
+"value": "WebDyne versions from 2.014 before 3.022 for Perl issue session cookies without the Secure, HttpOnly and SameSite attributes.\n\nWebDyne::Session sets its session cookie with only a name, value and path.\n\nBrowsers then send the session ID over plain HTTP and with cross-site requests, and expose it to page scripts. A network attacker or an injected script can steal the session, and another site can make requests that carry it."
+}
+],
+"affected": [
+{
+"source": "9b29abf9-4ab0-4765-b253-1875cd9b441e",
+"affectedData": [
+{
+"defaultStatus": "unaffected",
+"collectionURL": "https://cpan.org/modules",
+"packageName": "WebDyne",
+"modules": [
+"WebDyne"
+],
+"programFiles": [
+"lib/WebDyne/Session.pm"
+],
+"programRoutines": [
+{
+"name": "WebDyne::Session::handler"
+}
+],
+"repo": "https://github.com/aspeer/WebDyne",
+"packageURL": "pkg:cpan/WebDyne",
+"versions": [
+{
+"version": "2.014",
+"lessThan": "3.022",
+"versionType": "custom",
+"status": "affected"
+}
+]
+}
+]
+}
+],
+"metrics": {},
+"weaknesses": [
+{
+"source": "9b29abf9-4ab0-4765-b253-1875cd9b441e",
+"type": "Secondary",
+"description": [
+{
+"lang": "en",
+"value": "CWE-614"
+},
+{
+"lang": "en",
+"value": "CWE-1004"
+},
+{
+"lang": "en",
+"value": "CWE-1275"
+}
+]
+}
+]
+}
+}
+]
+}

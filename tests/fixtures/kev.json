@@ -1,0 +1,71 @@
+{
+"title": "CISA Catalog of Known Exploited Vulnerabilities",
+"catalogVersion": "2026.10.30",
+"count": 4,
+"vulnerabilities": [
+{
+"cveID": "CVE-2026-118527",
+"vendorProject": "Ivanti",
+"product": "Connect Secure",
+"vulnerabilityName": "Ivanti Connect Secure Generation of Predictable Numbers or Identifiers Vulnerability",
+"dateAdded": "2026-10-30",
+"shortDescription": "Ivanti Connect Secure contains a generation of predictable numbers or identifiers vulnerability that allows a remote authenticated attacker to upload files with attacker-controlled content to a known location on disk. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-111357.",
+"requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+"dueDate": "2026-11-13",
+"knownRansomwareCampaignUse": "Unknown",
+"forensicTriage": "No",
+"notes": "https://hub.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935?language=en_US ; ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-118527",
+"cwes": [
+"CWE-340"
+]
+},
+{
+"cveID": "CVE-2026-111357",
+"vendorProject": "Ivanti",
+"product": "Connect Secure",
+"vulnerabilityName": "Ivanti Connect Secure Missing Authentication for Critical Function Vulnerability",
+"dateAdded": "2026-10-30",
+"shortDescription": "Ivanti Connect Secure contains a missing authentication for critical function vulnerability that could allow a local authenticated attacker to escalate their privileges. This vulnerability can be chained with CVE-2026-104935 and CVE-2026-118527.",
+"requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+"dueDate": "2026-11-02",
+"knownRansomwareCampaignUse": "Unknown",
+"forensicTriage": "Yes",
+"notes": "https://hub.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935?language=en_US ; https://www.cisa.gov/news-events/alerts/2026/10/13/cisa-urges-patching-newly-exploited-vulnerability-ivanti-connect-secure ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-111357",
+"cwes": [
+"CWE-306",
+"CWE-862",
+"CWE-345"
+]
+},
+{
+"cveID": "CVE-2026-59310",
+"vendorProject": "Broadcom",
+"product": "VMware vCenter",
+"vulnerabilityName": "Broadcom VMware vCenter Path Traversal Vulnerability",
+"dateAdded": "2026-08-18",
+"shortDescription": "Broadcom VMware vCenter contains a path traversal vulnerability which could allow a threat actor with network access to vCenter to execute arbitrary code.",
+"requiredAction": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.",
+"dueDate": "2026-08-21",
+"knownRansomwareCampaignUse": "Known",
+"forensicTriage": "Yes",
+"notes": "https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/38017 ; BOD 26-04: https://www.cisa.gov/news-events/directives/bod-26-04-prioritizing-security-updates-based-risk ; Forensics Triage Requirements: https://www.cisa.gov/news-events/directives/bod-26-04-implementation-guidance-prioritizing-security-updates-based-risk ; https://nvd.nist.gov/vuln/detail/CVE-2026-59310",
+"cwes": [
+"CWE-22"
+]
+},
+{
+"cveID": "CVE-2021-43890",
+"vendorProject": "Microsoft",
+"product": "Windows",
+"vulnerabilityName": "Microsoft Windows AppX Installer Spoofing Vulnerability",
+"dateAdded": "2021-12-15",
+"shortDescription": "Microsoft Windows AppX Installer contains a spoofing vulnerability which has a high impacts to confidentiality, integrity, and availability.",
+"requiredAction": "Apply updates per vendor instructions.",
+"dueDate": "2021-12-29",
+"knownRansomwareCampaignUse": "Known",
+"forensicTriage": "No",
+"notes": "https://nvd.nist.gov/vuln/detail/CVE-2021-43890",
+"cwes": []
+}
+]
+}
