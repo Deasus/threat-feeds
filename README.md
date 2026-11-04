@@ -23,6 +23,7 @@ https://raw.githubusercontent.com/Deasus/threat-feeds/<feed>/checked.json   # th
 | `travel` | `advisories.json` | US State Department travel advisories: `levels` holds every destination, `items` those at Level 2 or above | US Government work, public domain |
 | `hazards` | `gdacs.json` | GDACS Orange and Red alerts, events that ended in the last 45 days | GDACS terms of use; European Commission reuse notice |
 | `hazards` | `quakes.json` | USGS significant earthquakes, past 7 days | US Government work, public domain. Credit: U.S. Geological Survey |
+| `gdeltevents` | `events.json`, `compact.json` | GDELT Events 2.0: protest, coercion, assault, fighting and mass violence (CAMEO roots 14, 17–20; Goldstein ≤ −5 for the violent roots), rolling 48 h, one record per place · base code · day with the source count as corroboration and a confidence from it; `compact.json` is the ~60 KB client file (CINDER and CATALYST read it) | GDELT Project: free for any commercial use with citation and a link (gdeltproject.org) |
 
 GDACS notifications are automatic estimates that may contain errors. They do not replace alerts from local or
 national authorities and need confirming before any decision; `gdacs.json` carries that notice.
