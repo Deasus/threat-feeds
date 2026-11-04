@@ -11,7 +11,10 @@ from tf import iso, iso_week, parse_date, stable_id
 import geocode
 
 CLASSES = ('terrorism', 'unrest', 'conflict', 'cyber', 'disruption', 'crime', 'unknown')
-KINDS = ('kevAddition', 'cyberAdvisory', 'advisory', 'earthquake', 'cyclone', 'flood', 'volcano', 'drought', 'wildfire')
+KINDS = ('kevAddition', 'cyberAdvisory', 'advisory', 'earthquake', 'cyclone', 'flood', 'volcano', 'drought', 'wildfire',
+         # unrest and violence from GDELT Events 2.0 (feed gdeltevents): CAMEO 14 protest · 17 coerce · 18 assault · 19 fight · 20 mass violence
+         'protest', 'hungerStrike', 'strike', 'blockade', 'riot', 'crackdown', 'curfew', 'massArrest', 'expulsion', 'repression',
+         'abduction', 'assault', 'bombing', 'assassination', 'armedClash', 'artillery', 'airstrike', 'ceasefireViolation', 'massViolence', 'massKilling')
 TIERS = ('official', 'aggregator', 'news')
 PRECISION = ('point', 'admin1', 'country', 'none')
 INFO, MINOR, MODERATE, SEVERE, EXTREME = 0, 1, 2, 3, 4

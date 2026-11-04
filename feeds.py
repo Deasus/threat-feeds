@@ -24,6 +24,10 @@ FEEDS = {
                 'every': 3600, 'timeout': 420},
     'travel':  {'code': ['travel', '_shared'], 'run': [['python3', 'fetch_state.py']],
                 'every': 3600, 'timeout': 180},
+    # GDELT Events 2.0 (DATA-SOURCES.md §2.4): the 15-minute exports, rolling 48 h, collapsed by place · code · day. The
+    # conductor ticks hourly; the fetcher reads the files of the last ~75 min it has not seen. Shared with CINDER.
+    'gdeltevents': {'code': ['gdeltevents', '_shared'], 'run': [['python3', 'fetch_gdelt_events.py']],
+                    'every': 3600, 'timeout': 420},
     'hazards': {'code': ['hazards', '_shared'], 'keep_going': True,
                 'run': [['python3', 'fetch_gdacs.py'], ['python3', 'fetch_usgs.py']],
                 'every': 3600, 'timeout': 180},
