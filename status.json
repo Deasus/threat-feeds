@@ -1,0 +1,71 @@
+{
+ "feeds": {
+  "cisa": {
+   "duration_s": 17.6,
+   "last_end": "2026-11-21T11:25:57Z",
+   "last_ok": "2026-11-21T11:25:57Z",
+   "last_published": "2026-11-21T11:25:57Z",
+   "last_start": "2026-11-21T11:25:39Z",
+   "last_start_ts": 1795260339.8938267,
+   "last_tail": "",
+   "ok": true,
+   "publish_error": null,
+   "running": false,
+   "runs": 72
+  },
+  "gdeltevents": {
+   "duration_s": 3.1,
+   "last_end": "2026-11-21T11:25:43Z",
+   "last_ok": "2026-11-21T11:25:43Z",
+   "last_published": "2026-11-21T11:25:43Z",
+   "last_start": "2026-11-21T11:25:39Z",
+   "last_start_ts": 1795260339.8960097,
+   "last_tail": "",
+   "ok": true,
+   "publish_error": null,
+   "running": false,
+   "runs": 62
+  },
+  "hazards": {
+   "duration_s": 29.1,
+   "failures": 1,
+   "last_end": "2026-11-21T11:26:10Z",
+   "last_ok": "2026-11-21T11:26:10Z",
+   "last_published": "2026-11-21T11:26:10Z",
+   "last_start": "2026-11-21T11:25:41Z",
+   "last_start_ts": 1795260341.5602555,
+   "last_tail": "",
+   "ok": true,
+   "publish_error": null,
+   "running": false,
+   "runs": 72
+  },
+  "travel": {
+   "duration_s": 1.7,
+   "last_end": "2026-11-21T11:25:41Z",
+   "last_ok": "2026-11-21T11:25:41Z",
+   "last_published": "2026-11-21T11:25:41Z",
+   "last_start": "2026-11-21T11:25:39Z",
+   "last_start_ts": 1795260339.8947346,
+   "last_tail": "",
+   "ok": true,
+   "publish_error": null,
+   "running": false,
+   "runs": 72
+  },
+  "vulns": {
+   "duration_s": 4.4,
+   "last_end": "2026-11-21T11:25:44Z",
+   "last_ok": "2026-11-21T11:25:44Z",
+   "last_published": "2026-11-21T11:25:44Z",
+   "last_start": "2026-11-21T11:25:39Z",
+   "last_start_ts": 1795260339.8940706,
+   "last_tail": "",
+   "ok": true,
+   "publish_error": null,
+   "running": false,
+   "runs": 72
+  }
+ },
+ "generated_at": "2026-11-21T11:26:10Z"
+}
